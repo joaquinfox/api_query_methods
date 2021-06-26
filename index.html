@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <nav>
+          <li>link 1</li>
+          <li>link 2</li>
+          <li>link 3</li>
+        </nav>
+      </header>
+      <main>
+        <div id="user-display">
+          <h4 id="user_name"></h4>
+          <img src="" alt="randomized profile picture" />
+          <p>Lives in <span id="user-location"></span></p>
+        </div>
+        <pre>
+        <code>
+fetch(`https://randomuser.me/api/`)
+  .then((response) => response.json())
+  .then((response) => {
+    const userData = response.results[0];
+    const userName = userData.name;
+    const userLocation = userData.location;
+    const userPicture = userData.picture;
+    h4El.append(`
+    ${userName.title}
+    ${userName.first} 
+    ${userName.last}`);
+    imageEl.src = userPicture.medium;
+    locationSpan.append(`
+    ${userLocation.city}, 
+    ${userLocation.country}`);
+  });
+        </code>
+        </pre>
+      </main>
+      <footer>footer</footer>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
