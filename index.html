@@ -11,6 +11,7 @@
   <body>
     <div id="container">
       <header>
+        <h1>API Query Methods</h1>
         <nav>
           <li>link 1</li>
           <li>link 2</li>
@@ -18,11 +19,23 @@
         </nav>
       </header>
       <main>
+        <section id="intro">
+          <h4>A basic fetch</h4>
+          <p>
+            Below is a basic API call made using the
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+              >fetch API</a
+            >. The request is made from a JavaScript file imported into a
+            vanilla html file, with no framework or library.
+          </p>
+        </section>
+        <p class="heading_el">Output</p>
         <div id="user-display">
           <h4 id="user_name"></h4>
           <img src="" alt="randomized profile picture" />
           <p>Lives in <span id="user-location"></span></p>
         </div>
+        <p class="heading_el">Code</p>
         <pre>
         <code>
             fetch(`https://randomuser.me/api/`)
@@ -43,8 +56,12 @@
               });
         </code>
         </pre>
+        <div id="btn-container"><button>Back</button><button>Next</button></div>
       </main>
-      <footer>footer</footer>
+      <footer>
+        Built by
+        <a href="https://joaquinfox.github.io/profile//">Joaquin Fox</a>
+      </footer>
     </div>
     <script src="./index.js"></script>
   </body>

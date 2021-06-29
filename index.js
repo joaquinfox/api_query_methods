@@ -1,4 +1,5 @@
-const h4El = document.querySelector('h4');
+// Basic fetch
+const h4El = document.querySelector('#user_name');
 const imageEl = document.querySelector('img');
 const locationSpan = document.querySelector('#user-location');
 
