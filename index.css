@@ -25,10 +25,13 @@ nav > li {
   list-style: none;
   padding: 2%;
 }
+header > * {
+  margin: 0;
+}
 
 main {
   width: 60%;
-  margin: auto;
+  margin: 1% auto;
   padding: 2%;
 }
 #user-display {
@@ -46,7 +49,7 @@ pre {
 }
 code {
   line-height: 2;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
 }
 img {
   border-radius: 12%;
